@@ -1,13 +1,17 @@
 ## Table of Contents
-- [1. Use Case Create Account](#1-use-case-create-account)
+- [Table of Contents](#table-of-contents)
+- [1. Use-Case Add Password](#1-use-case-add-password)
   - [1.1 Brief Description](#11-brief-description)
 - [2. Flow of Events](#2-flow-of-events)
   - [2.1 Basic Flow](#21-basic-flow)
+    - [2.1.1 Activity Diagram](#211-activity-diagram)
+    - [2.1.2 Mock up](#212-mock-up)
   - [2.2 Alternative Flows](#22-alternative-flows)
-- [3. Sepcial Requirements](#3-special-requirements)
+- [3. Special Requirements](#3-special-requirements)
 - [4. Preconditions](#4-preconditions)
 - [5. Postconditions](#5-postconditions)
 - [6. Extension Points](#6-extension-points)
+- [7. Function Points](#7-function-points)
 
 ## 1. Use-Case Add Password
 ### 1.1 Brief Description
@@ -39,3 +43,6 @@ Password is copied to the users clipboard.
 
 ## 6. Extension Points
 n/a
+
+## 7. Function Points
+![FP_CopyPassowrd](img/UC/functionPoints/copyPassword.jpg)
