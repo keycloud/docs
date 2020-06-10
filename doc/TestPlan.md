@@ -202,4 +202,6 @@ Human Resources
 |---|---|---|
 | Unexpected failures in production | Cover all important functions in tests | Rollback deployment to last stable version |
 ## 13. Management Process and Procedures
-**n/a**
+### 13.1 Deployment and Metrics
+1. Run TeamCity Build, includes the runners to find the metrics and the build of the server, frontend application and Android Autofiller.
+2. If all previous steps succeed, the docker image is deployed.
