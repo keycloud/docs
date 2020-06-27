@@ -98,7 +98,7 @@ n/a
 
 ## 9. Data View
 The following diagram describes the relationship model of our database.  
-![Entity-Relation Diagram](backend/database/er-diagram.svg)
+![Entity-Relation Diagram](backend/database/er-diagram.png)
 
 ## 10. Size and Performance
 tbd
