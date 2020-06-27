@@ -1,29 +1,48 @@
 # KeyCloud - Software Requirements Specifiction  
 
 ## Table of Contents
-- [1. Introduction](#1-introduction)
+- [KeyCloud - Software Requirements Specifiction](#keycloud---software-requirements-specifiction)
+  - [Table of Contents](#table-of-contents)
+  - [1. Introduction](#1-introduction)
     - [1.1 Purpose](#11-purpose)
     - [1.2 Scope](#12-scope)
-    - [1.3 Definition, Acronyms and Abbreviations](#13-definitions-acronyms-and-abbreviations)
+    - [1.3 Definitions, Acronyms and Abbreviations](#13-definitions-acronyms-and-abbreviations)
     - [1.4 References](#14-references)
     - [1.5 Overview](#15-overview)
-- [2. Overall Description](#2-overall-description)
+  - [2. Overall Description](#2-overall-description)
     - [2.1 Vision](#21-vision)
     - [2.2 Use Case Diagram](#22-use-case-diagram)
-- [3. Specific Requirements](#3-specific-requirements)
+  - [3. Specific Requirements](#3-specific-requirements)
     - [3.1 Functionality](#31-functionality)
+      - [3.1.1 Dashboard](#311-dashboard)
+      - [3.1.2 Chrome-Plugin](#312-chrome-plugin)
+      - [3.1.3 Android-AutoFiller-Service](#313-android-autofiller-service)
     - [3.2 Usability](#32-usability)
+      - [3.2.1 No training time needed](#321-no-training-time-needed)
+      - [3.2.2 Natural and easy workflow](#322-natural-and-easy-workflow)
     - [3.3 Reliability](#33-reliability)
+      - [3.3.1 Availability](#331-availability)
+      - [3.3.2 Defect Rate and Security](#332-defect-rate-and-security)
     - [3.4 Performance](#34-performance)
+      - [3.4.1 Response time](#341-response-time)
+      - [3.4.2 Capacity](#342-capacity)
+      - [3.4.3 Connection bandwidth](#343-connection-bandwidth)
     - [3.5 Supportability](#35-supportability)
+      - [3.5.1 Coding standards](#351-coding-standards)
+      - [3.5.2 Maintenance Utilities](#352-maintenance-utilities)
     - [3.6 Design Constraints](#36-design-constraints)
-    - [3.7 Online User Documentation and Help System Requirements](#37-on-line-user-documentation-and-help-system-requirements)
+      - [3.6.1 Development tools](#361-development-tools)
+    - [3.7 On-line User Documentation and Help System Requirements](#37-on-line-user-documentation-and-help-system-requirements)
     - [3.8 Purchased Components](#38-purchased-components)
     - [3.9 Interfaces](#39-interfaces)
+      - [3.9.1 User Interfaces](#391-user-interfaces)
+      - [3.9.2 Hardware Interfaces](#392-hardware-interfaces)
+      - [3.9.3 Software Interfaces](#393-software-interfaces)
+      - [3.9.4 Communications Interfaces](#394-communications-interfaces)
     - [3.10 Licensing Requirements](#310-licensing-requirements)
-    - [3.11 Legal, Copyright and Other Notices](#311-legal-copyright-and-other-notices)
+    - [3.11 Legal, Copyright, and Other Notices](#311-legal-copyright-and-other-notices)
     - [3.12 Applicable Standards](#312-applicable-standards)
-- [4. Supporting Information](#4-supporting-information)
+  - [4. Supporting Information](#4-supporting-information)
 
 ## 1. Introduction
 ### 1.1 Purpose  
@@ -58,9 +77,10 @@ Software Requirements Specification | a document, which captures the complete so
 Title | Date | Publishing organization |  
 --- | :---:  | ---
 [KeyCloud Blog](https://keycloud.zeekay.dev/) | 12.10.2019 | KeyCloud  
-[YouTrack Instance](https://keycloud-dev.zeekay.dev:7000/issues) | 12.10.2019 | KeyCloud  
+[YouTrack Instance](https://youtrack.zeekay.dev/) | 12.10.2019 | KeyCloud  
 [SRS](../doc/SRS.md) | 12.10.2019 | KeyCloud  
-[TeamCity](http://shared.zeggiedieziege.de:10000/) | 19.11.2019 | KeyCloud
+[TeamCity](https://teamcity.zeekay.dev/) | 19.11.2019 | KeyCloud
+[KeyCloud Application](https://keycloud-dev.zeekay.dev/dashboard/) | 27.06.2020 | KeyCloud
 
 ### 1.5 Overview
 The remainder of this document is structured in the following way: In the next chapter, the overall description, an overview of the functionality and an use-case-diagram is given.
@@ -137,10 +157,10 @@ The chrome plugin and the android-autofill-service will be implemented using the
 #### 3.6.1 Development tools
 - Version control system: Git (Github)
 - Backend development: JetBrains GoLand
-- Frontend development: tbd
+- Frontend development: JetBrains WebStorm
 - Project planning tool: JetBrains YouTrack
-- Build management: tbd
-- CI: tbd
+- Build management: JetBrains TeamCity
+- CI: JetBrains TeamCity & Docker
 
 ### 3.7 On-line User Documentation and Help System Requirements
 As stated our goal is to make our application as intuitive as possible. However, we will provide a FAQ and documentation. This will be especially helpful for users who want to know how our application works in depth.
@@ -156,12 +176,14 @@ Currently there are no other purchased components.
 #### 3.9.1 User Interfaces
 Following interfaces will be available:
 - Dashboard: manage (add, remove), retrieve passwords, change settings
-- Chrome plugin: manage, retrieve passwords
+- Chrome plugin: retrieve passwords
+- Android AutoFiller-Service: retrieve passwords
 #### 3.9.2 Hardware Interfaces
 n/a
 #### 3.9.3 Software Interfaces
 As the dashboard is a web-application it should be running on the most common browsers. Nevertheless, we want to primarily support the Google Chrome browser and its features.
 #### 3.9.4 Communications Interfaces
+The client-server communication uses a Rest-API.  
 The client-server communication uses the encrypted `HTTPS` protocol. Unencrypted connections are not supported.
 
 ### 3.10 Licensing Requirements

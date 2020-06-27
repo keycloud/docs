@@ -60,7 +60,7 @@ Unit Testing in the frontend is currently not part of the planned strategy.
 **n/a**
 ### 5.2	Testing Techniques and Types
 #### 5.2.1 KeyCloud Backend Testing (Unit Testing)
-|| |
+|||
 |---|---|
 |Technique Objective  	| Several functions in the backend will be called, their results will be compared with predefined results |
 |Technique 		| Data should be mocked. Backend will not be started, no datastore will be used |
@@ -108,7 +108,7 @@ Unit Testing in the frontend is currently not part of the planned strategy.
 **n/a**
 
 #### 5.2.11	Installation Testing
-**n/a**
+Test installation done by an external user group, more information can be found [here](https://keycloud.zeekay.dev/2020/06/20/week-18-installation/#comment-115).
 
 ## 6. Entry and Exit Criteria
 ### 6.1	Test Plan
@@ -121,19 +121,20 @@ n/a
 
 ## 7. Deliverables
 ### 7.1	Test Evaluation Summaries
-The test run summary is available in each TeamCity build.
+The test run summary is available in each TeamCity build.  
+A badge of the build status can be found [here](https://github.com/keycloud/keycloud/blob/master/README.md).
 ### 7.2	Reporting on Test Coverage
-n/a
+The test coverage is availabe in the log of each TeamCity build, because TeamCity does not currently support the export of the Golang test suite.
 ### 7.3	Perceived Quality Reports
-n/a
+A quality report is availabe in each TeamCity build.  
+More information can be found [here](https://teamcity.zeekay.dev/project.html?projectId=Keycloud&tab=stats). To login, please use the guest user.
 ### 7.4	Incident Logs and Change Requests
-n/a
+Incident logs are available in TeamCity.
 ### 7.5	Smoke Test Suite and Supporting Test Scripts
 n/a
 ### 7.6	Additional Work Products
 #### 7.6.1	Detailed Test Results
 The detailed test results are available in each TeamCity build.
-
 #### 7.6.2	Additional Automated Functional Test Scripts
 n/a
 #### 7.6.3	Test Guidelines
@@ -204,4 +205,4 @@ Human Resources
 ## 13. Management Process and Procedures
 ### 13.1 Deployment and Metrics
 1. Run TeamCity Build, includes the runners to find the metrics and the build of the server, frontend application and Android Autofiller.
-2. If all previous steps succeed, the docker image is deployed.
+2. If all previous steps succeed, the docker image is build and deployed to docker hub. This image is then deployed as the new live version of the application.

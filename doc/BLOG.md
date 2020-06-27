@@ -1,1 +1,1 @@
-[KeyCloud offical blog](https://mardybum.de/SE/)
+The blog, which provides weekly updates can be found [here](https://keycloud.zeekay.dev/).

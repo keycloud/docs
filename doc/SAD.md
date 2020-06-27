@@ -1,27 +1,29 @@
 # KeyCloud  - Software Architecture Document
 
 ## Table of Contents
-- [1. Introduction](#1-introduction)
+- [KeyCloud  - Software Architecture Document](#keycloud---software-architecture-document)
+  - [Table of Contents](#table-of-contents)
+  - [1. Introduction](#1-introduction)
     - [1.1 Purpose](#11-purpose)
     - [1.2 Scope](#12-scope)
     - [1.3 Definitions, Acronyms and Abbreviations](#13-definitions-acronyms-and-abbreviations)
     - [1.4 References](#14-references)
     - [1.5 Overview](#15-overview)
-- [2. Architectural Representation](#2-architectural-representation)
+  - [2. Architectural Representation](#2-architectural-representation)
     - [2.1 Technologies used](#21-technologies-used)
-- [3. Architectural Goals and Constraints](#3-architectural-goals-and-constraints)
-- [4. Use-Case View](#4-use-case-view)
+  - [3. Architectural Goals and Constraints](#3-architectural-goals-and-constraints)
+  - [4. Use-Case View](#4-use-case-view)
     - [4.1 Use-Case Realizations](#41-use-case-realizations)
-- [5. Logical View](#5-logical-view)
+  - [5. Logical View](#5-logical-view)
     - [5.1 Overview](#51-overview)
-- [6. Process View](#6-process-view)
-- [7. Deployment View](#7-deployment-view)
-- [8. Implementation View](#8-implementation-view)
+  - [6. Process View](#6-process-view)
+  - [7. Deployment View](#7-deployment-view)
+  - [8. Implementation View](#8-implementation-view)
     - [8.1 Overview](#81-overview)
     - [8.2 Layers](#82-layers)
-- [9. Data View](#9-data-view)
-- [10. Size and Performance](#10-size-and-performance)
-- [11. Quality](#11-quality)
+  - [9. Data View](#9-data-view)
+  - [10. Size and Performance](#10-size-and-performance)
+  - [11. Quality](#11-quality)
 
 ## 1. Introduction
 ### 1.1 Purpose
@@ -45,16 +47,16 @@ Software Architecture Document | The Software Architecture Document provides a c
 ### 1.4 References
 Title | Date | Publishing organization |  
 --- | :---:  | ---
-[KeyCloud Blog](https://keycloud.zeekay.dev/) | 12.10.2019 | KeyCloudTeam  
-[YouTrack Instance](https://keycloud-dev.zeekay.dev:7000/issues) | 12.10.2019 | KeyCloud  
+[KeyCloud Blog](https://keycloud.zeekay.dev/) | 12.10.2019 | KeyCloud  
+[YouTrack Instance](https://youtrack.zeekay.dev/) | 12.10.2019 | KeyCloud  
 [SRS](../doc/SRS.md) | 12.10.2019 | KeyCloud  
-[SAD](../doc/SAD.md) | 19.11.2019 | KeyCloud  
-[TeamCity](http://shared.zeggiedieziege.de:10000/) | 19.11.2019 | KeyCloud
+[TeamCity](https://teamcity.zeekay.dev/) | 19.11.2019 | KeyCloud
+[KeyCloud Application](https://keycloud-dev.zeekay.dev/dashboard/) | 27.06.2020 | KeyCloud
 ### 1.5 Overview
 This document contains the architectural representation, goals and constraints.
 
 ## 2. Architectural Representation
-Our application is build using Golang in the backend and HTML, CSS and plain JavaScript (cosmetics are made using bootstrap). 
+Our application is build using Golang in the backend and Angular (cosmetics are made using material design). 
 Because Golang is a multi-paradigm language which mainly works functional, we do not have relationships between our classes. 
 This is also the reason why we don't have a MVC architecture. Nevertheless, we tried our best to divide our classes up in these three categories.
 ### 2.1 Technologies used
@@ -63,10 +65,10 @@ IDEs:
 - Backend: JetBrains GoLand
 
 Languages:
-- Frontend: JavaScript, HTML, CSS
+- Frontend: 
 - Backend: Golang
-- Database: Sqlite
-- Testing: Java (Cucumber), Golang
+- Database: PostgreSQL
+- Testing: Java (Cucumber), Golang, Karma test, User test
 
 ## 3. Architectural Goals and Constraints
 n/a
