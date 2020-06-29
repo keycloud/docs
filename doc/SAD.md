@@ -15,7 +15,7 @@
   - [4. Use-Case View](#4-use-case-view)
     - [4.1 Use-Case Realizations](#41-use-case-realizations)
   - [5. Logical View](#5-logical-view)
-    - [5.1 Overview](#51-overview)
+    - [5.1 Design Pattern](#51-design-pattern)
   - [6. Process View](#6-process-view)
   - [7. Deployment View](#7-deployment-view)
   - [8. Implementation View](#8-implementation-view)
@@ -81,8 +81,8 @@ tbd
 ## 5. Logical View
 The following graphic describes the overall class organization of the backend.  
 ![Class-Diagram](./backend/ClassDiagram.PNG)
-### 5.1 Overview
-
+### 5.1 Design Pattern
+The adapter design pattern is contained with the usage of the StorageInterface (upper-left corner). It enables us to completly isolate the way we store our data, from the way we consume it, as the interface is only defined by the interface. This allowed to simplify development at the beginning by simply use a dummy in-memory way of storing the actual data. Later on within the development we were able to connect a database by writing new functions that implement the StorageInterface without changing a single line of code of our logic part. Even in the future we can just add new ways of storing the data, only by adding a new implementation of the interface.
 ## 6. Process View
 n/a
 
