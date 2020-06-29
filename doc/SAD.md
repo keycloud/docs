@@ -19,8 +19,6 @@
   - [6. Process View](#6-process-view)
   - [7. Deployment View](#7-deployment-view)
   - [8. Implementation View](#8-implementation-view)
-    - [8.1 Overview](#81-overview)
-    - [8.2 Layers](#82-layers)
   - [9. Data View](#9-data-view)
   - [10. Size and Performance](#10-size-and-performance)
   - [11. Quality](#11-quality)
@@ -71,12 +69,12 @@ Languages:
 - Testing: Java (Cucumber), Golang, Karma test, User test
 
 ## 3. Architectural Goals and Constraints
-n/a
+Our architecture should be able to be used in the cloud, therefore our final version has to be somewhat containerized.
 
 ## 4. Use-Case View
 ![Use Case Diagram](img/UseCases.png)
 ### 4.1 Use-Case Realizations
-tbd
+Further details on each UC can be found [here](https://github.com/keycloud/docs/tree/master/doc/UC).
 
 ## 5. Logical View
 The following graphic describes the overall class organization of the backend.  
@@ -90,18 +88,14 @@ n/a
 ![Deployment View](img/DeploymentView.png)
 
 ## 8. Implementation View
-n/a
-### 8.1 Overview
-n/a
-### 8.2 Layers
-n/a
+The complete implementation can be found in [this](https://github.com/keycloud/keycloud) repository.
 
 ## 9. Data View
 The following diagram describes the relationship model of our database.  
 ![Entity-Relation Diagram](backend/database/er-diagram.png)
 
 ## 10. Size and Performance
-tbd
+There are no specific requirements for the size or performance aside that the performance shouldn't be anoyingly slow.
 
 ## 11. Quality
-tbd
+The quality of our code and product should be as high as possible. To ensure this we use automated CI/CD (look at our [testplan](https://github.com/keycloud/docs/blob/master/doc/TestPlan.md) for further details).
