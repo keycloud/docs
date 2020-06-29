@@ -84,7 +84,7 @@ Unit Testing in the frontend is currently not part of the planned strategy.
 **n/a**
 
 #### 5.2.3 User Interface Testing
-**n/a**
+User interface testing done by an external user group, results are gathered through a questionaire, more information can be found [here](https://keycloud.zeekay.dev/2020/06/28/week-19-user-test/).
 
 #### 5.2.4 Performance Profiling 
 **n/a**
