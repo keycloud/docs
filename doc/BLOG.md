@@ -10,7 +10,7 @@ The blog, which provides weekly updates can be found [here](https://keycloud.zee
 | Week 04 | 5 UC - Use Case Specifications with activity diagrams, mockup, deferring description	| [Week 04 - Use Case Specification](https://keycloud.zeekay.dev/2019/10/23/week-04-use-case-specification/)
 | Week 05 | Adding description to use cases using Gherkin .feature as machine readable business language | [Week 05 - BDD with Cucumber](https://keycloud.zeekay.dev/2019/10/30/week-05-bdd-with-cucumber/)
 | Week 06 | PM Project Management process overview - getting ready for next week scrum retrospective. | [Week 06 - Scrum](https://keycloud.zeekay.dev/2019/11/08/week-06-scrum/)
-| Week 07 | project audit from scrum masters before class | [Week 07 - Retrospective](https://keycloud.zeekay.dev/2019/11/11/week-07-retrospective/)
+| Week 07 | Project audit from scrum masters before class | [Week 07 - Retrospective](https://keycloud.zeekay.dev/2019/11/11/week-07-retrospective/)
 | Week 08 | Class Diagram and CRC method, reflect MVC architecture in generated diagram | [Week 08 - Class Diagram](https://keycloud.zeekay.dev/2019/11/20/week-08-class-diagram/)
 | Week 09 | MVC - Software Architecture | [Week 09 - MVC](https://keycloud.zeekay.dev/2019/11/28/week-09-mvc/)
 | Midterm |  | [Midterm](https://keycloud.zeekay.dev/2019/12/15/midterm/) |
@@ -18,7 +18,7 @@ The blog, which provides weekly updates can be found [here](https://keycloud.zee
 | Week 11 |  Risk list and risk management plan | [Week 11 - Risk Management](https://keycloud.zeekay.dev/2020/04/21/week-11-risk-management/)
 | Week 12 | Function point calculation for use case estimation | [Week 12 - Function Points](https://keycloud.zeekay.dev/2020/05/01/week-12-function-points/)
 | Week 13 | Testing (Unit) | [Week 13 -Testing](https://keycloud.zeekay.dev/2020/05/09/week-13-testing/)
-| Week 14 | Refactoring - | [Week 14 - Refactoring](https://keycloud.zeekay.dev/2020/05/14/week-14-refactoring/)
+| Week 14 | Refactoring | [Week 14 - Refactoring](https://keycloud.zeekay.dev/2020/05/14/week-14-refactoring/)
 | Week 15 | Design pattern explanation and refactoring of code to include chosen design pattern | [Week 15 - Design Patterns](https://keycloud.zeekay.dev/2020/05/24/week-15-design-patterns/)
 | Week 16 | Metrics -> Proof of metrics tool run automatically on code | [Week 16 - Code Metrics](https://keycloud.zeekay.dev/2020/06/04/week-16-code-metrics/)
 | Week 17 | Retrospective Visit | [Week 17 - Retrospective](https://keycloud.zeekay.dev/2020/06/04/week-17-retrospective/)
